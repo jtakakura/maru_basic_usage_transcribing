@@ -22,7 +22,8 @@ defmodule MaruBasicUsageTranscribing.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:maru, "~> 0.11"}
+      {:maru, "~> 0.11"},
+      {:guardian, "~> 1.0"}
     ]
   end
 end
