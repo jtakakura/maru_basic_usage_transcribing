@@ -14,7 +14,6 @@ defmodule MaruBasicUsageTranscribing.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      applications: [:maru],
       extra_applications: [:logger]
     ]
   end
@@ -23,7 +22,8 @@ defmodule MaruBasicUsageTranscribing.MixProject do
   defp deps do
     [
       {:maru, "~> 0.11"},
-      {:guardian, "~> 1.0"}
+      {:guardian, "~> 1.0"},
+      {:xandra, ">= 0.0.0"}
     ]
   end
 end
