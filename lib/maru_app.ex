@@ -29,9 +29,9 @@ defmodule MaruApp.API do
 
   mount MaruApp.Router.Homepage
 
-  rescue_from :all do
+  rescue_from :all, as: e do
     conn
     |> put_status(500)
-    |> text("Server Error")
+    |> text("Server Error: #{inspect e}")
   end
 end
