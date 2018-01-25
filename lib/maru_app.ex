@@ -22,6 +22,10 @@ end
 defmodule MaruApp.API do
   use Maru.Router
 
+  before do
+    plug Plug.Logger
+  end
+
   plug Plug.Parsers,
     pass: ["*/*"],
     json_decoder: Poison,
