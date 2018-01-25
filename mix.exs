@@ -23,7 +23,8 @@ defmodule MaruBasicUsageTranscribing.MixProject do
     [
       {:maru, "~> 0.11"},
       {:guardian, "~> 1.0"},
-      {:xandra, ">= 0.0.0"}
+      {:xandra, ">= 0.0.0"},
+      {:logger_file_backend, "~> 0.0.10"}
     ]
   end
 end

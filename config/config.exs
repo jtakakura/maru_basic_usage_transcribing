@@ -31,3 +31,10 @@ use Mix.Config
 
 config :maru, MaruApp.API,
     http: [port: 8880]
+
+config :logger,
+    backends: [{LoggerFileBackend, :info}]
+
+config :logger, :info,
+    path: "log/info.log",
+    level: :info
